@@ -1,95 +1,41 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import styles from './page.module.css';
 
-export default function Home() {
+export default function Page(): React.ReactNode {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  <div className={styles.content}>
+    <div className={styles.card}>
+      <h1>Brennan Woodbury</h1>
+      <h2>Software Engineer</h2>
+      <h3>C# | TypeScript | JavaScript | NextJs | Python | SQL</h3>
+      <div className={styles.cardContent}>
+        <img src={"/images/frontshot1.JPG"} alt="Brennan Woodbury" />
+        <div>
+        <p>
+          Hey y&#39;all! I&#39;m Brennan, I grew up in a small town about 40 minutes west of Salt Lake City, Utah.
+          I&#39;m a software engineer with a passion for creating and learning. I have a background in web development and
+          I&#39;m currently working on expanding my knowledge in software engineering. I have experience in front-end
+          development, back-end development, and full-stack development. I have experience with a variety of technologies
+          and languages including JavaScript, TypeScript, React, NextJS, C#, NoSQL, SQL, Python, and more. I have a
+          passion for creating and learning and I&#39;m always looking for new opportunities to expand my knowledge and
+          skills. I love working on projects that challenge me and push me to learn new things. I&#39;m always looking for
+          new opportunities to collaborate with other developers and work on exciting projects.
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          <br />
+          <br />
+          Currently I live about 20 minutes north of Salt Lake City with my cat and two children. I love spending time with
+          my family, rock climbing, mountain biking, playing video games, and working on personal projects.
+        </p>
+          <div className={styles.links}>
+          <a href={"https://www.github.com/BrennanWoodbury"} target={"_blank"}>Github</a>
+          <a href={"https://www.linkedin.com/in/brennan-woodbury-549435bb/" } target={"_blank"}>linkedIn</a>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
-  );
+  </div>
+
+
+
+  )
 }

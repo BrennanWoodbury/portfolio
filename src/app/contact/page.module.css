@@ -1,0 +1,22 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  color: #E2E8F0;
+  justify-content: center;
+  align-items: center;
+  border: #7A7D7D 1px solid;
+  border-radius: 1rem;
+  margin: 3rem 15rem 3rem 15rem;
+  background-color: #121218;
+}
+
+.content h1 {
+  margin: 1rem;
+}
+
+.content p {
+  justify-self: center;
+  align-self: center;
+  margin: 1rem;
+  color: #94A3B8;
+}
