@@ -6,8 +6,9 @@
   padding: 1rem;
   border: #FFFBFE 1px solid;
   border-radius: 1rem;
-  color:#E2E8F0;
+  color: #E2E8F0;
   margin: 1.5rem 5rem 2rem 5rem;
+  background-color: #121218;
 }
 
 .card {
@@ -34,10 +35,13 @@
 }
 
 
-
 .cardContent img {
-  width: 30%;
+  min-width: 30%;
+  max-width: 50%;
+  min-height: 30%;
+  max-height: 50%;
   margin: 1rem;
+  object-fit: cover;
 }
 
 .cardContent div {

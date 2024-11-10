@@ -1,3 +1,23 @@
-.coachingSite{
-  width: 30%;
+.content div {
+  display: flex;
+  flex-direction: column;
+  color: #E2E8F0;
+  margin: 2rem auto;
+  border: #94A3B8 1px solid;
+  border-radius: .5rem;
+  padding: 2rem;
+  background-color: #121218;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% + 100px);
+}
+
+.content p {
+  text-align: center;
+}
+
+.coachingSiteImg {
+  width: 30vw;
+  margin: 1rem;
 }
