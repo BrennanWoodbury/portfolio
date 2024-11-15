@@ -5,21 +5,12 @@ import styles from './page.module.css';
 import Typewriter from "@/utils/typewriter";
 
 export default function Page(): React.ReactNode {
-  const text = "Hey y'all! I'm Brennan, I grew up in a small town near Salt Lake City, Utah.\n" +
-    "              I'm a software engineer with a passion for creating and learning. I have a background in web " +
-    "              development and I'm currently working on expanding my knowledge in software engineering. I have " +
-    "              experience in front-end development, back-end development, and full-stack development. I have experience " +
-    "              with a variety of technologies and languages including JavaScript, TypeScript, React, NextJS, C#, NoSQL, " +
-    "              SQL, Python, and more. I have a passion for creating and learning and I'm always looking for new " +
-    "              opportunities to expand my knowledge and skills. I love working on projects that challenge me and push me " +
-    "              to learn new things. I'm always looking for new opportunities to collaborate with other developers and " +
-    "              work on exciting projects.\n" +
-    "              \n" +
-    "              \n" +
-    "              \n" +
-    "              Currently I still live near Salt Lake City with my cat and two children. I love spending " +
-    "              time with my family, rock climbing, mountain biking, playing video games, and working on personal " +
-    "              projects."
+  const text = "I'm Brennan, a full stack developer specializing in building modern web applications " +
+    "with React, TypeScript, and C#. I turn complex problems into elegant solutions." +
+    "I'm passionate about building software that not only solves problems but also makes a positive impact on the world." +
+    "\n\n\n" +
+    "I live in Utah and like to spend my free time rock climbing, hiking, playing video games, and spending time with my" +
+    " two children and cat."
   return (
     <div className={styles.content}>
       <div className={styles.card}>
@@ -30,7 +21,7 @@ export default function Page(): React.ReactNode {
           <img src={"/images/frontshot1.JPG"} alt="Brennan Woodbury"/>
           <div>
 
-            <Typewriter text={text} speed={7} delay={1500}/>
+            <Typewriter text={text} speed={15} delay={1500}/>
 
             <div className={styles.links}>
               <a href={"https://www.github.com/BrennanWoodbury"} target={"_blank"}>Github</a>
