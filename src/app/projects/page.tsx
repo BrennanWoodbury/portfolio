@@ -7,7 +7,7 @@ export default function Page(): React.ReactNode {
     <div className={styles.content}>
       <div className={styles.coachingSite}>
         <h2>Website for a Client</h2>
-        <p>This was a website I built to use as a template for a website for life coaches. </p>
+        <p>This was a website for a client. </p>
         <img src={"/images/moms_site.png"} alt="Clients site" className={styles.coachingSiteImg}/>
       </div>
       <div>
