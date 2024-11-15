@@ -10,7 +10,7 @@ export default function Page(): React.ReactNode {
     "I'm passionate about building software that not only solves problems but also makes a positive impact on the world." +
     "\n\n\n" +
     "I live in Utah and like to spend my free time rock climbing, hiking, playing video games, and spending time with my" +
-    " two children and cat."
+    " cat and two children.";
   return (
     <div className={styles.content}>
       <div className={styles.card}>
