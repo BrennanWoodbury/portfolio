@@ -6,7 +6,7 @@ import Typewriter from "@/utils/typewriter";
 
 export default function Page(): React.ReactNode {
   const text = "I'm Brennan, a full stack developer specializing in building modern web applications " +
-    "with React, TypeScript, and C#. I turn complex problems into elegant solutions." +
+    "with React, TypeScript, and C#. I turn complex problems into elegant solutions. " +
     "I'm passionate about building software that not only solves problems but also makes a positive impact on the world." +
     "\n\n\n" +
     "I live in Utah and like to spend my free time rock climbing, hiking, playing video games, and spending time with my" +
