@@ -1,16 +1,30 @@
 'use client';
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './page.module.css';
 import Typewriter from "@/utils/typewriter";
 
 export default function Page(): React.ReactNode {
+  const [windowWidth, setWindowWidth] = useState<number>(0);
   const text = "I'm Brennan, a full stack developer specializing in building modern web applications " +
     "with React, TypeScript, and C#. I turn complex problems into elegant solutions. " +
     "I'm passionate about building software that not only solves problems but also makes a positive impact on the world." +
     "\n\n\n" +
     "I live in Utah and like to spend my free time rock climbing, hiking, playing video games, and spending time with my" +
     " cat and two children.";
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [])
+
+
   return (
     <div className={styles.content}>
       <div className={styles.card}>
@@ -28,7 +42,7 @@ export default function Page(): React.ReactNode {
         <div className={styles.cardContent}>
           <img src={"/images/frontshot1.JPG"} alt="Brennan Woodbury"/>
           <div>
-            {innerWidth > 768 ? (
+            {windowWidth > 768 ? (
                 <Typewriter text={text} speed={10} delay={1500}/>) :
               (
                 <p style={{whiteSpace: 'pre-line'}}>
