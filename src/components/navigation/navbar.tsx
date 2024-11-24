@@ -6,6 +6,7 @@ import Sidebar from "@/components/navigation/sidebar";
 
 export default function Navbar(): React.ReactNode {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [windowWidth, setWindowWidth] = React.useState(0);
 
   const handleSidebarClick = (): void => {
     setIsOpen(!isOpen);
@@ -18,6 +19,17 @@ export default function Navbar(): React.ReactNode {
       document.body.classList.remove("no-scroll");
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [])
 
   const menuItems = [
     {
@@ -47,7 +59,7 @@ export default function Navbar(): React.ReactNode {
     <div className={styles.navbar}>
       <a href={"/"}><img src={"/svg/terminal.svg"} alt="terminal"/></a>
       <div className={styles.spacer}></div>
-      {innerWidth > 768 ?
+      {windowWidth > 768 ?
         (<ul className={styles.navMenu}>
           <li><a href={"/"}>Home</a></li>
           <li><a href={"/contact"}>Contact</a></li>
