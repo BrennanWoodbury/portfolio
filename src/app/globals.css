@@ -1,3 +1,7 @@
+:root {
+  --background-color: #171722
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -22,3 +26,77 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.technologyTag {
+  margin: .5rem;
+  font-size: .8rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .technologyTag:hover {
+    scale: 1.05;
+
+  }
+
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.nextJsTag {
+  background-color: #7a26cb;
+
+}
+
+.typeScriptTag {
+  background-color: #2f2ecb;
+}
+
+.javascriptTag {
+  background-color: #576ad6;;
+}
+
+.reactTag {
+  background-color: #5cb85c;
+}
+
+.cssTag {
+  background-color: #cb801b;
+}
+
+.htmlTag {
+  background-color: #00cb05;
+}
+
+.cSharpTag {
+  background-color: #cb0100
+}
+
+.postgresTag {
+  background-color: #00aecb;
+}
+
+.pythonTag {
+  background-color: #1b68cb
+}
+
+.fastApiTag {
+  background-color: #cb0771
+}
+
+.aiTag {
+  background-color: #f9feff;
+  color: #444;
+}
+
+.sqlTag {
+  background-color: #fff608;
+  color: #444;
+}
+

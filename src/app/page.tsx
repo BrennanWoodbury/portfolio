@@ -16,12 +16,27 @@ export default function Page(): React.ReactNode {
       <div className={styles.card}>
         <h1>Brennan Woodbury</h1>
         <h2>Software Engineer</h2>
-        <h3>C# | TypeScript | Go | JavaScript | NextJs | Python | SQL</h3>
+        <div className={`${styles.technologyTags}`}>
+          <div className={`cSharpTag technologyTag`}>C#</div>
+          <div className={`typeScriptTag technologyTag`}>TypeScript</div>
+          <div className={`nextJsTag technologyTag`}>NextJS</div>
+          <div className={`javascriptTag technologyTag`}>JavaScript</div>
+          <div className={`pythonTag technologyTag`}>Python</div>
+          <div className={`sqlTag technologyTag`}>SQL</div>
+        </div>
+        {/*<h3>C# | TypeScript | Go | JavaScript | NextJs | Python | SQL</h3>*/}
         <div className={styles.cardContent}>
           <img src={"/images/frontshot1.JPG"} alt="Brennan Woodbury"/>
           <div>
-
-            <Typewriter text={text} speed={15} delay={1500}/>
+            {innerWidth > 768 ? (
+                <Typewriter text={text} speed={10} delay={1500}/>) :
+              (
+                <p style={{whiteSpace: 'pre-line'}}>
+                  {text}
+                </p>
+              )
+            }
+            {/*<p>{text}</p>*/}
 
             <div className={styles.links}>
               <a href={"https://www.github.com/BrennanWoodbury"} target={"_blank"}>Github</a>

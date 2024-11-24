@@ -25,9 +25,11 @@ const TerminalTypewriter = ({
 
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setIsTyping(true);
-    });
+    }, delay);
+
+    return () => clearTimeout(timeout);
   }, [delay]);
 
   useEffect(() => {

@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  position: relative;
   align-items: center;
   /*background-color: #7A7D7D;*/
   color: #121218;
@@ -13,13 +14,17 @@
 
 .navbar a {
   margin-left: 1rem;
+  @media (max-width: 768px) {
+    margin-left: 2rem;
+    scale: 2;
+  }
 }
 
 .spacer {
   flex: 3;
 }
 
-.navbar ul {
+.navMenu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -31,4 +36,8 @@
 .navbar ul li {
   /* strong */
   font-weight: 700;
+}
+
+.mobileMenu {
+  display: flex;
 }
