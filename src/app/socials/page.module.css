@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  color: #E2E8F0;
+  justify-content: center;
+  align-items: center;
+  border: #7A7D7D 1px solid;
+  border-radius: 1rem;
+  margin: 3rem 5rem 3rem 5rem;
+  background-color: var(--background-color);
+  padding: 3rem;
+  height: calc(100% + 100px);
+}
+
+.content h1 {
+  margin: 0 0 0 0;
+}
+
+.content p {
+  justify-self: center;
+  align-self: center;
+  margin: .5rem 0 1rem 0;
+  color: #94A3B8;
+}
+
+.content a {
+  text-decoration: underline;
+}
